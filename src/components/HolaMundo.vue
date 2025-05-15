@@ -18,14 +18,15 @@ export default {
 <style>
 
 .titulo {
-    color: red;
+    color: rgb(172, 138, 93);
 }
 h2 {
-    background: blue;
+    background: rgb(61, 61, 206);
+    color: yellow;
 }
 
 p {
-    color: green;
+    color: rgb(106, 172, 189);
     background: blueviolet;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
