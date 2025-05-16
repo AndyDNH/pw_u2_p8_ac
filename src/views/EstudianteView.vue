@@ -1,16 +1,15 @@
 <template>
-  <div>
-    <Estudiante></Estudiante>
-  </div>
+  <Estudiante/>
 </template>
 
 <script>
 import Estudiante from "@/components/Estudiante.vue"
 export default {
+
     components:{
-    Estudiante,
+        Estudiante
     }
-    
+
 }
 </script>
 

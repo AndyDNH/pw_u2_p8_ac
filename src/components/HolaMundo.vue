@@ -1,33 +1,31 @@
 <template>
-  <div>
+  <div class="container">
     <h1 class="titulo">Universidad Central del Ecuador</h1>
     <h2>Facultad de Ingenieria</h2>
-    <h3>Carrera de Computacion</h3>
+    <h3>Carrera de Computaci&#243;n</h3>
     <h4>Hola Mundo desde Vue</h4>
-    <p>Andres Cueva</p>
+    <p>john Quinatoa</p>
   </div>
-
 </template>
 
 <script>
 export default {
 
-}
+};
 </script>
 
 <style>
-
-.titulo {
-    color: rgb(172, 138, 93);
-}
-h2 {
-    background: rgb(61, 61, 206);
-    color: yellow;
+.titulo{
+    color: red;
 }
 
-p {
-    color: rgb(106, 172, 189);
-    background: blueviolet;
+h2{
+    background: blue;
+}
+
+p{
+    color: green;
+    background: blue;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
 }
