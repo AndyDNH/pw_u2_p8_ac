@@ -1,17 +1,21 @@
 <template>
-<div id="app">
-    <ContadorView/>
+  
+  <div id="app">
+    <!-- <ContadorView/> -->
+    <EstudianteView></EstudianteView>
   </div>
 </template>
 
 <script>
-import HolaMundoView from '@/views/HolaMundoView.vue';
-import ContadorView from '@/views/ContadorView.vue';
+// import HolaMundoView from "@/views/HolaMundoView.vue";
+// import ContadorView from "@/views/ContadorView.vue";
+import EstudianteView from "@/views/EstudianteView.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    ContadorView,
+    // ContadorView,
+    EstudianteView,
   },
 };
 </script>
