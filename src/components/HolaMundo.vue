@@ -14,7 +14,8 @@ export default {
 };
 </script>
 
-<style>
+<!-- para que los estilos solo se apliquen a este componente -->
+<style scoped>
 .titulo{
     color: red;
 }

@@ -25,15 +25,36 @@
     <br />
     <button v-on:click="agregarEstudiante"><b>Agregar</b></button>
 
-    <ul>
-      <li
-        v-for="{ nombre, apellido, genero, edad, correo } in lista"
-        :key="nombre + apellido"
-      >
-        Nombre: {{ nombre }} - Apellido: {{ apellido }} - Género: {{ genero }} -
-        Edad: {{ edad }} - Correo: {{ correo }}
-      </li>
-    </ul>
+   
+
+    <table border="1">
+            <thead>
+                <!--tr siempre es primero y representa una fila, primero se contruye tanto en la cabecera como el cuerpo-->
+                <tr>
+                    <!--Como contenido de la fila declaro todas las columnas-->
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Genero</th>
+                    <th>edad</th>
+                    <th>Correo</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="{ nombre, apellido, genero, edad, correo } in lista"
+        :key="nombre + apellido">
+                    <!--Para la columna ya no declaro un th si no que un elemento td-->
+                    <td>{{ nombre }}</td>
+                    <td>{{apellido}}</td>
+                    <td>{{ genero }}</td>
+                    <td>{{ edad }}</td>
+                    <td>{{ correo }}</td>
+                    <td><button>Ver</button></td>
+                </tr>
+                <!--Por cada fila es un elemento html tr-->
+                
+            </tbody>
+        </table>
   </div>
 </template>
  
@@ -158,7 +179,7 @@ input {
 button {
   background: #4e91f9;
   color: #fff;
-  padding: 12px 20px;
+  padding: 12px 10px;
   font-size: 20px;
   border: none;
   border-radius: 8px;
@@ -166,18 +187,49 @@ button {
   width: 120px;
 }
 
-ul {
-    list-style: none;
-    margin-top: 30px;
-    
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  background-color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  
+}
+ 
+thead {
+  background-color: #f4f6f8;
+}
+ 
+thead th {
+  text-align: C;
+  padding: 15px;
+  color: #333;
+  font-weight: 600;
+  border-bottom: none;
+}
+ 
+tbody tr {
+  transition: background-color 0.2s;
+}
+ 
+tbody tr:nth-child(even) {
+  background-color: #7bacdd;
+}
+ 
+tbody tr:hover {
+  background-color: #9da0a5;
+}
+ 
+tbody td {
+  padding: 15px;
+  border-bottom: 1px solid #e3e6ea;
+  color: #444;
 }
 
-li {
-    background: #7ec2fd;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    color: #333;
-    font-size: 20px;
-}
+
 </style>

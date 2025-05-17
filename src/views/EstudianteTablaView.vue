@@ -1,13 +1,13 @@
 <template>
-  <Estudiante/>
+  <EstudianteTabla/>
 </template>
 
 <script>
-import Estudiante from "@/components/Estudiante.vue"
+import EstudianteTabla from "@/components/EstudianteTabla.vue"
 export default {
 
     components:{
-        Estudiante
+        EstudianteTabla
     }
 
 }
