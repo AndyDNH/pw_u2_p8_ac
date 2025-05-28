@@ -3,7 +3,8 @@
  <!-- <ContadorView/> -->
  <!-- <EstudianteView/> -->
  <!-- <EstudianteTablaView/> -->
-  <PreguntaView/>
+  <!-- <PreguntaView/> -->
+   <MarsRover/>
 
 </template>
 
@@ -13,13 +14,15 @@ import ContadorView from "./views/ContadorView.vue"
 import EstudianteView from "@/views/EstudianteView.vue"
 // import EstudianteTablaView from "@/views/EstudianteTablaView.vue"
 import PreguntaView from "@/views/PreguntaView.vue"
+import MarsRover from "@/views/MarsRoverView.vue"
 export default {
   name: 'App',
   components: {
     HolaMundoView,
     ContadorView,
     EstudianteView,
-    PreguntaView
+    PreguntaView,
+    MarsRover
     // EstudianteTablaView
   }
 }
